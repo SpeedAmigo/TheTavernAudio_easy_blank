@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: TavernSoundProject/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638828957577985989
+  lastModified: 638841079876264111
   FileSizes:
   - Name: Desktop
-    Value: 976544
+    Value: 976576
   Exists: 1
 --- !u!114 &-6134999146712341943
 MonoBehaviour:
@@ -43,8 +43,8 @@ MonoBehaviour:
   Type: 2
   IsGlobal: 0
   Labels:
-  - open
-  - close
+  - Open
+  - Close
   Exists: 1
 --- !u!114 &-4929587109428493185
 MonoBehaviour:
@@ -61,10 +61,10 @@ MonoBehaviour:
   Path: TavernSoundProject/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638828957567991800
+  lastModified: 638841079875924475
   FileSizes:
   - Name: Desktop
-    Value: 3684960
+    Value: 3684992
   Exists: 1
 --- !u!114 &-3532862818987720407
 MonoBehaviour:
@@ -76,9 +76,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Jump/FootSwicher
+  m_Name: parameter:/Jump/FootSwitcher
   m_EditorClassIdentifier: 
-  Name: FootSwicher
+  Name: FootSwitcher
   StudioPath: 
   Min: 0
   Max: 1
@@ -89,8 +89,8 @@ MonoBehaviour:
   Type: 2
   IsGlobal: 0
   Labels:
-  - stone
-  - wood
+  - Stone
+  - Wood
   Exists: 1
 --- !u!114 &-2383955335514784181
 MonoBehaviour:
@@ -121,6 +121,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 806
+--- !u!114 &-1369724835517994538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/RoomInside
+  m_EditorClassIdentifier: 
+  Path: snapshot:/RoomInside
+  Guid:
+    Data1: -231801400
+    Data2: 1259089030
+    Data3: 800536968
+    Data4: 2124339055
+  Banks:
+  - {fileID: 8835338687338253474}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-1229609863078928494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,9 +185,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Footsteps/FootSwicher
+  m_Name: parameter:/Footsteps/FootSwitcher
   m_EditorClassIdentifier: 
-  Name: FootSwicher
+  Name: FootSwitcher
   StudioPath: 
   Min: 0
   Max: 1
@@ -171,8 +198,8 @@ MonoBehaviour:
   Type: 2
   IsGlobal: 0
   Labels:
-  - stone
-  - wood
+  - Stone
+  - Wood
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -200,12 +227,13 @@ MonoBehaviour:
   - {fileID: 4773088006291467355}
   - {fileID: 7750855041563566994}
   - {fileID: -2383955335514784181}
+  - {fileID: -1369724835517994538}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8835338687338253474}
   StringsBanks:
   - {fileID: 6733432169593078702}
-  cacheTime: 638828957592145194
+  cacheTime: 638841129337777007
   cacheVersion: 131617
 --- !u!114 &1423442785732234315
 MonoBehaviour:
@@ -222,10 +250,10 @@ MonoBehaviour:
   Path: TavernSoundProject/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638828957592145194
+  lastModified: 638841129337777007
   FileSizes:
   - Name: Desktop
-    Value: 2262624
+    Value: 2263456
   Exists: 1
 --- !u!114 &4173816062126049097
 MonoBehaviour:
@@ -281,7 +309,7 @@ MonoBehaviour:
   - {fileID: -6134999146712341943}
   MinDistance: 1
   MaxDistance: 20
-  Length: 750
+  Length: 1280
 --- !u!114 &5257184717544558189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,10 +352,10 @@ MonoBehaviour:
   Path: TavernSoundProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638828957568086921
+  lastModified: 638841117753557189
   FileSizes:
   - Name: Desktop
-    Value: 1306
+    Value: 1700
   Exists: 1
 --- !u!114 &6992856221110448513
 MonoBehaviour:
@@ -425,8 +453,8 @@ MonoBehaviour:
   Path: TavernSoundProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638828957568066926
+  lastModified: 638841117753537098
   FileSizes:
   - Name: Desktop
-    Value: 1036
+    Value: 3552
   Exists: 1
