@@ -167,7 +167,6 @@ MonoBehaviour:
     Data3: 800536968
     Data4: 2124339055
   Banks:
-  - {fileID: 1423442785732234315}
   - {fileID: 8835338687338253474}
   IsStream: 0
   Is3D: 0
@@ -262,7 +261,7 @@ MonoBehaviour:
   - {fileID: 8835338687338253474}
   StringsBanks:
   - {fileID: 6733432169593078702}
-  cacheTime: 638847173025973778
+  cacheTime: 638853199204931040
   cacheVersion: 131617
 --- !u!114 &1423442785732234315
 MonoBehaviour:
@@ -279,10 +278,10 @@ MonoBehaviour:
   Path: TavernSoundProject/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638847087655514371
+  lastModified: 638853152326929090
   FileSizes:
   - Name: Desktop
-    Value: 2264416
+    Value: 2263456
   Exists: 1
 --- !u!114 &4173816062126049097
 MonoBehaviour:
@@ -381,7 +380,7 @@ MonoBehaviour:
   Path: TavernSoundProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638847173025973778
+  lastModified: 638853199204931040
   FileSizes:
   - Name: Desktop
     Value: 1766
@@ -482,8 +481,8 @@ MonoBehaviour:
   Path: TavernSoundProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638847173025953746
+  lastModified: 638853199204921041
   FileSizes:
   - Name: Desktop
-    Value: 4522
+    Value: 4710
   Exists: 1

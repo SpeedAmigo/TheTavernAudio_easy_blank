@@ -37,7 +37,7 @@
 			<value>volume</value>
 		</property>
 		<property name="value">
-			<value>-10</value>
+			<value>0</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{5124ed6f-97de-4dc8-aa91-2ff04a711098}</destination>
@@ -74,20 +74,20 @@
 		<property name="nameOfPropertyBeingModulated">
 			<value>value</value>
 		</property>
-		<property name="initialValue">
-			<value>1</value>
-		</property>
 		<property name="attackTime">
 			<value>840</value>
 		</property>
 		<property name="peakValue">
 			<value>-15.5</value>
 		</property>
+		<property name="holdTime">
+			<value>0</value>
+		</property>
 		<property name="sustainValue">
 			<value>-15.5</value>
 		</property>
 		<property name="releaseTime">
-			<value>1400</value>
+			<value>3400</value>
 		</property>
 	</object>
 	<object class="ADSRModulator" id="{a7b82b97-9cf8-42c0-b666-6d1b347b2f96}">

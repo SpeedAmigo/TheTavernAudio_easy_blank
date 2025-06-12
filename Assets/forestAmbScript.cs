@@ -9,21 +9,23 @@ public class forestAmbScript : MonoBehaviour
     [SerializeField] private EventReference snapshotRef;
 
     private EventInstance snapshotInstance;
+    private bool snapshotActive;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (snapshotRef.IsNull) return;
+        if (snapshotActive) return;
 
         snapshotInstance = FMODUnity.RuntimeManager.CreateInstance(snapshotRef);
         snapshotInstance.start();
-
+        snapshotActive = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (snapshotRef.IsNull) return;
-
+        if (!snapshotActive) return;
+       
         snapshotInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         snapshotInstance.release();
+        snapshotActive = false;
     }
 }

@@ -7,12 +7,12 @@ public class Rooms : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         RoomAmbient roomAmbient = FindObjectOfType<RoomAmbient>();
-        roomAmbient.ambientActivated = true;
+        roomAmbient.insideRoom = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
         RoomAmbient roomAmbient = FindObjectOfType<RoomAmbient>();
-        roomAmbient.ambientActivated = false;
+        roomAmbient.insideRoom = false;
     }
 }

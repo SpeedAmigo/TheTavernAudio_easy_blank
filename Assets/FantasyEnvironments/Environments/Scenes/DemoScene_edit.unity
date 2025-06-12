@@ -348,7 +348,8 @@ GameObject:
   - component: {fileID: 129069796}
   - component: {fileID: 129069800}
   - component: {fileID: 129069799}
-  - component: {fileID: 129069798}
+  - component: {fileID: 129069801}
+  - component: {fileID: 129069802}
   m_Layer: 0
   m_Name: RoomAmbTrigger 2
   m_TagString: Untagged
@@ -371,28 +372,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 882882083}
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
---- !u!64 &129069798
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 129069795}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &129069799
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -446,6 +425,47 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 129069795}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &129069801
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129069795}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.859398, y: 1.0452533, z: 10}
+  m_Center: {x: 2.5702982, y: -0.044860207, z: 0}
+--- !u!114 &129069802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129069795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc4a4da891945f49aaa5b911f9f8711, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reference:
+    Guid:
+      Data1: -231801400
+      Data2: 1259089030
+      Data3: 800536968
+      Data4: 2124339055
+    Path: snapshot:/RoomInside
+  insideRoom: 0
 --- !u!1 &131062900
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,9 +818,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4446057377279770, guid: cb181bc6c302bca40929333077286a04, type: 3}
       insertIndex: -1
       addedObject: {fileID: 641071304}
-    - targetCorrespondingSourceObject: {fileID: 4020387075358236, guid: cb181bc6c302bca40929333077286a04, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 737120069}
     - targetCorrespondingSourceObject: {fileID: 4289115941247784, guid: cb181bc6c302bca40929333077286a04, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2002987396}
@@ -3277,51 +3294,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &737120068
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 737120069}
-  - component: {fileID: 737120070}
-  m_Layer: 0
-  m_Name: RoomAmbient
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &737120069
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737120068}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 858237803}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &737120070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737120068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfc4a4da891945f49aaa5b911f9f8711, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ambientActivated: 0
 --- !u!1 &760055454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3641,11 +3613,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 821359753}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &858237803 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4020387075358236, guid: cb181bc6c302bca40929333077286a04, type: 3}
-  m_PrefabInstance: {fileID: 159108028}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &860430238
 GameObject:
   m_ObjectHideFlags: 0
@@ -3786,6 +3753,7 @@ Transform:
   m_Children:
   - {fileID: 1039452383}
   - {fileID: 129069796}
+  - {fileID: 1946975925}
   - {fileID: 1030442133}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4592,7 +4560,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfc4a4da891945f49aaa5b911f9f8711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ambientActivated: 0
+  reference:
+    Guid:
+      Data1: -231801400
+      Data2: 1259089030
+      Data3: 800536968
+      Data4: 2124339055
+    Path: snapshot:/RoomInside
+  insideRoom: 0
 --- !u!1 &1072624433
 GameObject:
   m_ObjectHideFlags: 0
@@ -5260,6 +5235,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 90
   doorsOpened: 1
+  roomEventOpen:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 129069802}
+        m_TargetAssemblyTypeName: RoomAmbient, Assembly-CSharp
+        m_MethodName: DoorClosedSnapshot
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  roomEventClose:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 129069802}
+        m_TargetAssemblyTypeName: RoomAmbient, Assembly-CSharp
+        m_MethodName: DoorClosedSnapshot
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   DoorsEvent:
     Guid:
       Data1: 272950815
@@ -6083,6 +6088,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 90
   doorsOpened: 1
+  roomEventOpen:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1039452384}
+        m_TargetAssemblyTypeName: RoomAmbient, Assembly-CSharp
+        m_MethodName: DoorClosedSnapshot
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  roomEventClose:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1039452384}
+        m_TargetAssemblyTypeName: RoomAmbient, Assembly-CSharp
+        m_MethodName: DoorClosedSnapshot
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   DoorsEvent:
     Guid:
       Data1: 272950815
@@ -6092,11 +6127,11 @@ MonoBehaviour:
     Path: event:/Doors
   insideRoomSnap:
     Guid:
-      Data1: -792950246
-      Data2: 1112365983
-      Data3: -2130702459
-      Data4: -1165160926
-    Path: event:/AmbTavern
+      Data1: -231801400
+      Data2: 1259089030
+      Data3: 800536968
+      Data4: 2124339055
+    Path: snapshot:/RoomInside
 --- !u!1 &1552246197
 GameObject:
   m_ObjectHideFlags: 0
@@ -6451,6 +6486,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 90
   doorsOpened: 1
+  roomEventOpen:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1946975929}
+        m_TargetAssemblyTypeName: RoomAmbient, Assembly-CSharp
+        m_MethodName: DoorClosedSnapshot
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  roomEventClose:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1946975929}
+        m_TargetAssemblyTypeName: RoomAmbient, Assembly-CSharp
+        m_MethodName: DoorClosedSnapshot
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   DoorsEvent:
     Guid:
       Data1: 272950815
@@ -8045,6 +8110,135 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2131066730}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1946975924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1946975925}
+  - component: {fileID: 1946975928}
+  - component: {fileID: 1946975927}
+  - component: {fileID: 1946975926}
+  - component: {fileID: 1946975929}
+  m_Layer: 0
+  m_Name: RoomAmbTrigger 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1946975925
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946975924}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: -14.715, y: 1.3374, z: 8.99}
+  m_LocalScale: {x: 1.0186332, y: 5.4326763, z: 0.32166687}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 882882083}
+  m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
+--- !u!65 &1946975926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946975924}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.859398, y: 1.0452533, z: 10}
+  m_Center: {x: 2.5702982, y: -0.044860207, z: 0}
+--- !u!23 &1946975927
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946975924}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1946975928
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946975924}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1946975929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946975924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc4a4da891945f49aaa5b911f9f8711, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reference:
+    Guid:
+      Data1: -231801400
+      Data2: 1259089030
+      Data3: 800536968
+      Data4: 2124339055
+    Path: snapshot:/RoomInside
+  insideRoom: 0
 --- !u!1001 &1952063277
 PrefabInstance:
   m_ObjectHideFlags: 0
