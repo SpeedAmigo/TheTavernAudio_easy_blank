@@ -20,6 +20,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 976896
   Exists: 1
+--- !u!114 &-7091130736972458748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/LowHealth
+  m_EditorClassIdentifier: 
+  Path: snapshot:/LowHealth
+  Guid:
+    Data1: 1689809819
+    Data2: 1299527375
+    Data3: -249899590
+    Data4: 1445601417
+  Banks:
+  - {fileID: 8835338687338253474}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-6134999146712341943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,7 +88,7 @@ MonoBehaviour:
   Path: TavernSoundProject/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638847118680194061
+  lastModified: 638865308234037261
   FileSizes:
   - Name: Desktop
     Value: 3685472
@@ -256,12 +283,13 @@ MonoBehaviour:
   - {fileID: -2383955335514784181}
   - {fileID: -1369724835517994538}
   - {fileID: -4069789343179573032}
+  - {fileID: -7091130736972458748}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8835338687338253474}
   StringsBanks:
   - {fileID: 6733432169593078702}
-  cacheTime: 638853199204931040
+  cacheTime: 638865326660811139
   cacheVersion: 131617
 --- !u!114 &1423442785732234315
 MonoBehaviour:
@@ -278,7 +306,7 @@ MonoBehaviour:
   Path: TavernSoundProject/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638853152326929090
+  lastModified: 638865256402392597
   FileSizes:
   - Name: Desktop
     Value: 2263456
@@ -380,10 +408,10 @@ MonoBehaviour:
   Path: TavernSoundProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638853199204931040
+  lastModified: 638865326660811139
   FileSizes:
   - Name: Desktop
-    Value: 1766
+    Value: 1806
   Exists: 1
 --- !u!114 &6992856221110448513
 MonoBehaviour:
@@ -481,8 +509,8 @@ MonoBehaviour:
   Path: TavernSoundProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638853199204921041
+  lastModified: 638865326660795596
   FileSizes:
   - Name: Desktop
-    Value: 4710
+    Value: 7540
   Exists: 1
